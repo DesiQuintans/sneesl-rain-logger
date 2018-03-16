@@ -49,15 +49,22 @@ These notes assume that you have basic experience with assembling and soldering 
 
 ## Circuit diagram
 
-Please see `_Build notes/Circuits/` to find circuit diagrams. The .fzz format is openable with [Fritzing](http://fritzing.org). If you don't have Fritzing, you can look at the .png format version.
+Please see `Build notes/Circuits/` to find circuit diagrams. The .fzz format is openable with [Fritzing](http://fritzing.org). If you don't have Fritzing, you can look at the .png format version.
 
 ## Build photos and tips
 
-Please see `_Build notes/Photos/` for mixed photos of the build process that could be helpful. If you browse the documents in `_Build notes/Digital logbook/` could also be instructive.
+Please see `Build notes/Photos/` for mixed photos of the build process that could be helpful. If you browse the documents in `Build notes/Digital logbook/` could also be instructive.
 
 ## Programming Sneesl
 
+### Library dependencies
+
+- [rocketscream's Low-Power](https://github.com/rocketscream/Low-Power)
+- [sridharrajagopal's DSRTCLib](https://github.com/sridharrajagopal/DSRTCLib)
+
+### General notes
+
 You can use the Arduino IDE to program Sneesl.
 
-1. Use `Scratchpad/RTC/Set_RTC_Time` to set the time on the TinyDuino's RTC (real-time clock) shield. Compile the script and then upload it immediately (because it sets the RTC based on the compile time of the script).
-2. Compile and upload the latest Sneesl firmware from `_Firmware/`.
+1. Use `_Scratchpad/RTC/Set_RTC_Time` to set the time on the TinyDuino's RTC (real-time clock) shield. Compile the script and then upload it immediately (because it sets the RTC based on the compile time of the script).
+2. Compile and upload the latest Sneesl firmware from `Firmware/`.
