@@ -1,0 +1,81 @@
+# 11 Aug 2015 #
+
+Things I'm happy with:
+
+	* The battery holder fits perfectly! Juuuuust enough clearance between the top of the batteries and the top of the buzzer on the overturned PCB.
+	* The spring clasps are amazeballs. So handy already.
+	* The PCB and TinyDuino are sized perfectly to fit into the lid. Mounting with double-sided tape is simple and secure.
+	* Using terminal screw-posts is great because the wires can be flattened against the lid. Using pins or soldering them onto the protoshield would make them stick out at least a little.
+	* Battery wires on the right side of the PCB is fine. There's a hollow on the right of the battery pack that they can nestle into.
+
+
+Things I'm neutral about:
+
+	* The wires going from the PCB to the TinyDuino are quite rigid. However, a good side of this is that once the PCB and TinyDuino are mounted, the wires can be pushed down and will stay put by themselves.
+	* The TinyDuino is mounted so that the wires make sense, but you need to sort of dig in between the wires coming out of the PCB to get the SD card out. If I flip it 180° the GND and D2 wires would be incredibly short, but the SD card will easy to grab from the edge of the lid.
+
+
+Things I'm unhappy with:
+
+	* The lid looks uninteresting from the outside because everything is mounted upside-down.
+	* The logger label covers the TinyDuino, which is more visually interesting than the PCB (for now).
+	* Over-torquing the face screw of the 3.5 mm jack can cause it to shear apart! Do not over-tighten. Countersinking the front face so that the nut sits inside the material should give me a more positive (and glue-able!) attachment.
+	* The wires coming off the PCB and to the components in the case body (battery packs and 3.5 mm jack) need to be tidied up with braided cable covering. The battery and 3.5 mm should be done separately, so that the battery packs can be removed independently.
+	* The logger reads a tip event whenever something conductive touches the closed 3.5 mm jack's contacts. 
+	* Pull-up resistor can probably be removed from the PCB, using the built-in pull-up instead.
+	* The 3.5 mm jack needs to be mounted so that it's easier to fit from the inside.
+	* The cord for the 3.5 mm jack is too short.
+
+
+Things to add and change:
+
+	* A silica bag can be placed on the left side, both to cushion the battery pack and prevent movement, as well as to protect the internals. Need to find the indicator silica!
+	* Can I mount the PCB right-side-up by using cut-down standoffs? Is it worth it? Maybe for just one photo-op logger?
+	* 
+		* If I don't mount the PCBs right-way–up, I can move the top-face labels so that they cover the middle of the PCB and make it look less boring.
+
+	* Add braided cable cover to battery and 3.5 mm jack wires — or tidy up in some other way. Short lengths of shrink wrap? Tiny zip ties?
+	* 
+		* But should not interfere with the battery pack's fit into the enclosure!
+
+	* Can I change the 3.5 mm jack/plug to fix the false readings?
+	* 3.5 mm jack cables need to be made as long as the battery pack cables.
+	* Countersink the face of the 3.5 mm mounting hole.
+
+
+# 12 Aug 2015 #
+
+After trying some of the proposed changes:
+
+	* Mounting the PCB right-side-up is not worth it, because it increases complexity and makes an already-cramped build more cramped.
+	* Braided cable is a bit of a job, but zip ties or shrink wrap work just fine for binding the wires together.
+	* The 3.5 mm plug cannot be changed; it will always trigger when plugging in a jack, regardless of what wiring I try. Will simply catch it during data quality control (filter out <1 mm of rain within an hour).
+	* 3.5 mm jack cables are now 15 cm long. They could still stand to be longer, perhaps 20 cm for the one that needs to reach longer.
+	* I tried mounting the TinyDuino rotated 180° so that the SD card would be against the edge of the lid, reasoning that this would make it easier to grab. It actually makes it more difficult, because the lid prevents you from getting your finger underneath the card. When the card is adjacent to the PCB, there's enough room to do that.
+	* Countersinking the 3.5 mm jacks was unnecessary; Simply super-gluing them into the hole and finger-tightening the locking nut is good enough.
+
+
+# 31 Aug 2015 #
+
+☑ Mount spring clasps onto boxes.
+☑ Drill rain jack mounting holes.
+☑ Solder wires to rain jacks, then heatshrink.
+☑ Clip mounting studies off the bottoms of the boxes.
+☑ Glue 3x AA holders back-to-back.
+☑ Make first PCB prototype.
+☑ Revise PCB layout and make PCB guide labels.
+☑ Affix guide labels to remaining PCBs.
+☑ Make changes to Arduino software: logging period and internal pull-up resistor.
+☑ Prep battery wires and rain jack wires with short lengths of heatshrink to keep them tidy in the box.
+☒ Make breadboard test-bed for PCB components (to test functionality before soldering).
+     ☒ Test all battery pack combinations (pack A only, pack B only, both packs in parallel) to ensure they work.
+     ☒ Test with rain collector hooked into the circuit.
+☑ Populate PCBs with buzzer, diodes, and rails.
+☑ Pre-cut wire lengths for PCBs.
+☑ Solder all components and wires.
+☑ Add strain relief staples.
+☐ Assemble TinyDuinos.
+☐ Set TinyDuino time.
+☐ Program TinyDuinos with newest software.
+☐ Hook up PCBs to TinyDuinos, trimming wires to fit.
+☑ Glue and screw rain jacks to boxes.
