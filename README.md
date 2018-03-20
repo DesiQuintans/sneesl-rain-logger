@@ -12,7 +12,7 @@ Information about how Sneesl works and what kind of data it outputs can be found
 
 I dedicate Sneesl to the public domain. If you use it for scientific work, please cite:
 
-> Quintans, DJ 2015. Sneesl: An Arduino-based data-logger for rain collectors. Microprocessor software. https://github.com/DesiQuintans/sneesl-rain-logger
+> Quintans, DJ 2015. Sneesl: An Arduino-based data-logger for rain collectors. Microprocessor software. https://github.com/DesiQuintans/sneesl-rain-logger. doi:10.5281/zenodo.1204674
 
 ## Features that Sneesl has
 
